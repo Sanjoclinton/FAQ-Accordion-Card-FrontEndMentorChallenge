@@ -154,7 +154,7 @@ header {
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(calc(-31% - 400px), -25%);
+        transform: translate(calc(-31% - 400px), 0%);
 
     }
 
@@ -162,6 +162,6 @@ header {
         background: url(images/bg-pattern-desktop.svg) no-repeat center bottom / 100% 100%;
         width: 966px;
         height: 945px;
-        transform: translate(-58%, -60%);
+        transform: translate(-58%, -55%);
     }
 }
