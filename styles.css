@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(#af67e9, #6565e7);
+    min-height: 100vh;
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
+    background-color: white;
+    width: 90%;
+    max-width: 380px;
+    border-radius: 20px;
+}
+
+.design {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.woman-online {
+    background: url(images/illustration-woman-online-mobile.svg) no-repeat center center / 100%;
+    z-index: 2;
+    width: 236.85px;
+    height: 179.57px;
+    transform: translate(-50%,-60%);
+}
+
+#box {
+        display: none; 
+}
+
+.mobile-bg {
+    background: url(images/bg-pattern-mobile.svg) no-repeat center center / 100% 100%;
+    z-index: -1;
+    width: 240px;
+    height: 104px;
+    transform: translate(-50%,0%); 
+}
+
+
+header {
+    text-align: center;
+    color: hsl(238, 29%, 16%);
+    margin-top: 150px;
+    font-weight: 700;
+    font-size: 2.1rem;
+}
+
+.faq-container {
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    margin: 15px auto;
+}
+
+.qa-container {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    margin: 10px auto;
+    width: 100%;
+}
+
+.question-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 700;
+    color: hsl(238, 29%, 16%);
+}
+
+.answer  {
+    transition: opacity 1s ease-out;
+    padding: 15px 0;
+    font-size: 1.1em;
+}
+
+.hide {
+   display: none;
+}
+
+
+.question:hover {
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+
+.arrow {
+    transition: all 0.4s ease-in;
+}
+
+.arrow-upside {
+    transform: rotateX(180deg);
+}
+
+@media (min-width: 800px) {
+    main {
+        min-width: 800px;
+        min-height: 490px;
+        transform: translate(-45%, -50%);
+        overflow: hidden;
+    }
+
+    .design {
+        top: 50%;
+        left: 0;
+    }
+
+    header {
+        text-align: left;
+        margin-top: 20px;
+        position: absolute;
+        left: 55%;
+        top: 0;
+    }
+
+    .faq-container {
+        width: 37.5%;
+        position: absolute;
+        left: 55%;
+        top: 10%;
+    }
+
+    .woman-online {
+        background: url(images/illustration-woman-online-desktop.svg) center center / 100% 100%;
+        width: 472px;
+        height: 359px;
+        transform: translate(-15%, -50%);
+    }
+
+    #box {
+        display: block;
+        z-index: 4;
+        width: 191px;
+        height: 184px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(calc(-31% - 400px), -25%);
+
+    }
+
+    .mobile-bg {
+        background: url(images/bg-pattern-desktop.svg) no-repeat center bottom / 100% 100%;
+        width: 966px;
+        height: 945px;
+        transform: translate(-58%, -60%);
+    }
+}
